@@ -1,0 +1,214 @@
+html, body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    position: relative;
+}
+
+body {
+    background-color: #F2F4F7;
+}
+
+    body::before {
+        content: "";
+        background-image: url('/Images/background.png');
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.1;
+    }
+
+section {
+    margin-bottom: 100px;
+}
+
+#main {
+    overflow: hidden;
+}
+
+#home {
+    position: relative;
+    min-height: 100vh;
+}
+
+.jumbotron {
+    color: #fff;
+    position: absolute;
+    z-index: 12;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#about {
+    font-size: 16px;
+}
+
+
+.justify-text {
+    text-align: justify;
+}
+
+
+.card {
+    height: 400px;
+    position: relative;
+}
+
+
+.show-on-hover {
+    text-align: center;
+    padding: 5px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+}
+
+.card:hover > .show-on-hover {
+    opacity: 1;
+    transition: ease-out 0.2s;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    line-height: 50px;
+}
+
+.highlight {
+    color: #2ac5ed;
+}
+
+#content {
+    padding: 70px 0;
+}
+
+    #content .features-list {
+        padding-top: 35px;
+    }
+
+.features-list .feature-block {
+    margin-bottom: 18px;
+}
+
+    .features-list .feature-block .ico {
+        font-size: 37px;
+        line-height: 70px;
+        width: 70px;
+        height: 70px;
+        background: #5accff;
+        display: inline-block;
+        border-radius: 50%;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+    }
+
+    .features-list .feature-block.bottom-line .ico {
+        width: auto;
+        height: auto;
+        background: transparent;
+        color: #5accff;
+        text-align: center;
+        font-size: 41px;
+        vertical-align: top;
+        margin-top: -10px;
+    }
+
+    .features-list .feature-block.bottom-line .fa-github {
+        font-size: 50px;
+    }
+
+    .features-list .feature-block.bottom-line .fa-dashboard {
+        font-size: 45px;
+        margin-top: -15px;
+    }
+
+    .features-list .feature-block.bottom-line .ico {
+        float: left;
+        margin-right: 15px;
+        margin-left: 21px;
+    }
+
+    .features-list .feature-block.bottom-line .features-content {
+        padding-right: 15px;
+        display: table;
+    }
+
+        .features-list .feature-block.bottom-line .features-content .name {
+            margin-bottom: 5px;
+        }
+
+        .features-list .feature-block.bottom-line .features-content .subname {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+
+    .features-list .feature-block .name {
+        font-size: 20px;
+        line-height: 1.25em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .features-list .feature-block .text {
+        font-size: 12px;
+        line-height: normal;
+        margin-bottom: 15px;
+    }
+
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    height: 120px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%
+}
+
+    .slider::before, .slider::after {
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        content: "";
+        height: 120px;
+        position: absolute;
+        width: 200px;
+        z-index: 2;
+    }
+
+    .slider::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    }
+
+    .slider::before {
+        left: 0;
+        top: 0;
+    }
+
+    .slider .slide-track {
+        animation: scroll 40s linear infinite;
+        display: flex;
+        width: calc(250px * 14);
+    }

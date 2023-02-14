@@ -1,0 +1,250 @@
+﻿@model GogiSkola.Models.ViewModels.HomePageViewModel
+@{
+    ViewData["Title"] = "Gogi Škola";
+}
+
+<section id="home" class="container-lg d-flex justify-content-center">
+
+    <div class="jumbotron">
+        <h1 class="display-4">Pozdrav, golmani!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <a class="btn btn-primary btn-lg" href="#uclani-se" role="button">Postani član</a>
+    </div>
+
+    <div class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner ">
+            <div class="carousel-item active">
+                <img src="../Images/carousel-1.jpg" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../Images/carousel-2.jpg" class="d-block " alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../Images/carousel-3.jpg" class="d-block " alt="...">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="about">
+    <div class="container justify-text">
+        <div class="row pt-lg-5 mt-lg-5" >
+            <div class="col-lg-6 col-12" data-aos="fade-right">
+                <img src="../Images/about-us.jpg" class="d-block img-fluid img-thumbnail" alt="Ekipa" >
+            </div>
+            <div class="col-lg-6 col-12 pl-2" data-aos="fade-left">
+                <h2>O nama.</h2>
+                <h4>Gdje se nalazimo?</h4>
+                <p>
+                    Zavisno od godišnjih doba, u periodu koji nam dozvoljava treninge na otvorenom,
+                    trening kamp nam se nalazi u naselju Kralje (Bihać), na stadionu NK ''Sloga 1937''.
+                </p>
+                <h4>Zašto golman?</h4>
+                <p>
+                    Golman ima jedinstvenu poziciju u fudbalu i zahtjeva specijalizovanu obuku da razvije set vještina koje su mu potrebne.
+                    Da bi bio efikasan na poziciji, golmanu treba samopouzdanje i čvrstina da bi bio zadnja linija odbrane tima i prva tačka napada. Također je potrebno razviti tehničku i taktičku vještinu da bi se integrisao u odbranu tima.
+                    Golman je vođa i komunikator. Metode naše golmanske škole su da podstiču bolje donošenje odluka golmana u toku igre. Naši programi su osmišljeni tako da progresivno prate razvitak svakog polaznika individualno na osnovu njegovih godina, sposobnosti i iskustva.
+                </p>
+            </div>
+        </div>
+
+        <div class="row pt-lg-5 mt-lg-5" >
+            <div class="col-lg-6 col-12" data-aos="fade-right">
+                <h2>Trener</h2>
+                <h3>Goran Piralić</h3>
+                <p class="font-italic">
+                    <em>
+                        "Moji prvi nogometni koraci počinju 1998 godine u NK''Jedinstvo'' Bihać na poziciji golmana u tadašnjim pionirima.
+                        Zbog odlaska trenera Senada Hodžić u mali, ali istorijom bogat klub FK ''Prekounje'' Bihać, ja sam krenuo njegovim
+                        stopama, kao i mnogi moji vršnjaci i postao član FK ''Prekounje''. Da ne zaboravim, uz veliko hvala još jednom treneru
+                        Ismetu Saračeviću–Mimetu, koji se već tu nalazio kao domaćin".
+                    </em>
+                </p>
+                <p>
+                    <em>
+                        "Stara želja i ideja, koja je došla na realizaciju prije skoro godinu dana, bila je da pokrenem prvu golmansku školu na USK-a,
+                        koja je registrovana isključivo iz razloga što su golmani jako bitna karika svakog kluba, a na našem kantonu su maksimalno zapostavljeni.
+                        Manjak trenerskog kadra za gomanske pozicije, pogotovo sa omladinskim kategorijama, gdje je najbitnije prvi korak napraviti ispravno".
+                    </em>
+                </p>
+                <p>
+                    <em>
+                        Smatram da svojim znanjem i iskustvom, zalagenjem i velikom željom, naravno uz pomoć mojih kolega, bivših trenera i sportskih radnika
+                        mogu prenijeti na djecu dodatno znanje, motiv, i želju.Pogotvo radnu etiku i kulturu.
+                        U skorijoj budućnosti, plan mi je završiti golmanski certifikat i golmansku licencu B. Napredovati kako lično, tako i profesionalno
+                        zajedno sa svim polaznicima ove jedne pozitivne sportske priče, i ko zna, sutra možda budemo pomogli da imamo jednog Krajišnika na
+                        vratnicama najvećih nogometnih klubova.
+                    </em>
+                </p>
+                <div class="text-end">
+                    <a class="btn btn-primary" style="background-color: #3b5998;" href="https://www.facebook.com/gorangogo.piralic" target="_blank" role="button">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn btn-primary" style="background-color: #ac2bac;" href="https://instagram.com" target="_blank" role="button">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-lg-6 col-12" data-aos="fade-left">
+                <img src="../Images/trener.jpg" class="d-block img-fluid img-thumbnail" alt="Ekipa">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="trening">
+    <div class="container text-center p-5">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 pb-5">
+                <h2 data-aos="fade-up">Naši ciljevi.</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row offset-lg-1 col-sm-12 col-md-12 col-lg-10 p-2">
+                <div class="col-sm-6 col-md-4 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fa-sharp fa-solid fa-person-chalkboard display-1"></i>
+                    <h3 class="py-2">Obuka</h3>
+                    <p style="text-align:justify">
+                        Bili amater, početnik ili profesionalac, početni korak je najbitniji. Zato zajedno kroz psihološku i fizičku pripremu pristupamo obuci naših polaznika da bi dostigli njihov maksimum prilikom svakog treninga.
+                    </p>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fa-solid fa-futbol display-1"></i>
+                    <h3 class="py-2">Rekviziti</h3>
+                    <p style="text-align:justify">Uz svakodnevno unapređivanje i tehničko opremanje naše škole, posjedujemo sve potrebne rekvizite za kvalitetan golmanski trening i rad.</p>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4" data-aos="zoom-in" data-aos-delay="500">
+                    <i class="fa-solid fa-people-group display-1"></i>
+                    <h3 class="py-2">Grupe</h3>
+                    <p style="text-align:justify">
+                        1. Mlađa grupa (2012., 2013., 2014., 2015., 2016. godište) <br /><br />
+
+                        2. Starija grupa (2006., 2007., 2008., 2009., 2010., 2011. godište)
+                    </p>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4" data-aos="zoom-in" data-aos-delay="600">
+                    <i class="fa-solid fa-map-location display-1"></i>
+                    <h3 class="py-2">Lokacija</h3>
+                    <p style="text-align:justify">Stadion NK ''Sloga 1937''( Kralje, Bihać) i HSC Arena (kompleks nekadašnjeg Kombiteksa, Bihać)</p>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4" data-aos="zoom-in" data-aos-delay="700">
+                    <i class="fa-solid fa-clipboard-check display-1"></i>
+                    <h3 class="py-2">Korekcija</h3>
+                    <p style="text-align:justify">Pod korekcijom smatramo ispraviti greške napravljene u prošlom radu, namjerne ili nenamjerne. Tim sitnicama, zajedno sa našim polaznicima maksimalno posvećujemo značaj. </p>
+
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4" data-aos="zoom-in" data-aos-delay="800">
+                    <i class="fa-solid fa-stopwatch-20 display-1"></i>
+                    <h3 class="py-2">Monitoring</h3>
+                    <p style="text-align:justify"> Maksimalno posvećujemo monitoring-u (praćenju) naših polaznika golmana na sportskom putu, također maksimalnu pažnju pridajemo njihovom socijalno društvenom napredovanju.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section id="polaznici">
+    <div class="col-sm-12 col-md-12 col-lg-12 pb-5">
+        <h2 class="text-center" data-aos="zoom-in">Naši polaznici.</h2>
+    </div>
+    <div class="container">
+        @for (int i = 0; i <= Model.Polaznici.Count; i += 3)
+        {
+            <div class="row py-2">
+                @for (int j = i; j < i + 3 && j < Model.Polaznici.Count; j++)
+                {
+                    <div class="col-lg-4 col-sm-6 overflow-hidden">
+                        <div class="card" data-aos="zoom-in" data-aos-delay="300">
+                            <img src="@Model.Polaznici[j].ProfileURL"
+                         class="card-img-top img-thumbnail"
+                         alt="@Model.Polaznici[j].FullName" />
+                            <div class="show-on-hover">
+                                <h5 class="card-title">@Model.Polaznici[j].FullName</h5>
+                                <p class="card-text">
+                                    @Model.Polaznici[j].Bio
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+
+</section>
+
+
+
+<div class="slider">
+    <div class="slide-track">
+        <div class="slide">
+            <img src="/Images/Sponzori/bhtelecom-sponzor.png" height="120" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="/Images/Sponzori/bhtelecom-sponzor.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="/Images/Sponzori/bhtelecom-sponzor.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="/Images/Sponzori/bhtelecom-sponzor.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="/Images/Sponzori/bhtelecom-sponzor.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="/Images/Sponzori/bhtelecom-sponzor.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="/Images/Sponzori/bhtelecom-sponzor.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="/Images/Sponzori/bhtelecom-sponzor.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="/Images/Sponzori/bhtelecom-sponzor.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="/Images/Sponzori/bhtelecom-sponzor.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="/Images/Sponzori/bhtelecom-sponzor.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="/Images/Sponzori/bhtelecom-sponzor.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="/Images/Sponzori/bhtelecom-sponzor.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="/Images/Sponzori/bhtelecom-sponzor.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="/Images/Sponzori/bhtelecom-sponzor.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="/Images/Sponzori/bhtelecom-sponzor.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="/Images/Sponzori/bhtelecom-sponzor.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="/Images/Sponzori/bhtelecom-sponzor.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+            <img src="/Images/Sponzori/bhtelecom-sponzor.png" height="100" width="250" alt="" />
+        </div>
+    </div>
+</div>

@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - GogiSkola</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.css" />
+    <link rel="stylesheet" href="~/lib/aos/aos.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/GogiSkola.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light navbar-expand-md fixed-top bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#home"><img class="img-fluid w-25" src="../Images/navbar-icon.png"> Gogi Škola</a><button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse justify-content-end" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Početna</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">O nama</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#polaznici">Polaznici</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#news">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacts">Kontakti</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main" role="main">
+        @RenderBody()
+    </main>
+
+    <footer id="contacts" class="bg-dark text-center text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-4 py-5">
+                    <h4>Linkovi</h4>
+                    <ul class="list-unstyled mb-0">
+                        <li class="pt-2"><a class="text-decoration-none text-white" href="#home">Početna</a></li>
+                        <li class="pt-2"><a class="text-decoration-none text-white" href="#about">O nama</a></li>
+                        <li class="pt-2"><a class="text-decoration-none text-white" href="#trening">Polaznici</a></li>
+                        <li class="pt-2"><a class="text-decoration-none text-white" href="#galerija">Galerija</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-4 py-5">
+                    <h4 >Kontakt</h4>
+                    <ul class="list-unstyled mb-2">
+                        <li class="pt-2">Tel: +38765360400</li>
+                        <li class="pt-2">Email: piralic_goran@hotmail.com</li>
+                    </ul>
+                    <a class="btn btn-primary" style="background-color: #3b5998;" href="https://facebook.com" target="_blank" role="button">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn btn-primary" style="background-color: #55acee;" href="https://twitter.com" target="_blank" role="button">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-primary" style="background-color: #ac2bac;" href="https://instagram.com" target="_blank" role="button">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="col-12 col-lg-4 py-5">
+                    <h4 class="text-center">Termini treninga</h4>
+                    <div class="row text-center"><div class="col-6">Pon:</div><div class="col-6 text-start">17:00 sati</div></div>
+                    <div class="row text-center"><div class="col-6">Čet:</div><div class="col-6 text-start">17:00 sati</div></div>
+                    <div class="row text-center"><div class="col-6">Sub:</div><div class="col-6 text-start">15:00 sati</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            &copy; @DateTime.Now.Year - GogiSkola
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/aos/aos.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>AOS.init({
+        disable: 'phone',
+        delay: 300,
+        once: true
+    });</script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

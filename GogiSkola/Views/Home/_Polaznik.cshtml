@@ -1,0 +1,15 @@
+﻿@model GogiSkola.Models.Polaznik
+
+<div class="col-lg-4 col-md-12">
+    <div class="card">
+        <img src="@Model.ProfileURL"
+             class="card-img-top"
+             alt="@Model.FullName" />
+        <div class="card-body text-center">
+            <h5 class="card-title">@Model.FullName</h5>
+            <p class="card-text">
+                @Model.Bio
+            </p>
+        </div>
+    </div>
+</div>
